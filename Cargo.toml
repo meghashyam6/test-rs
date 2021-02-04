@@ -9,6 +9,3 @@ edition = "2018"
 [dependencies]
 elasticsearch = "7.9.0-alpha.1"
 tokio = { version = "0.2.8", features = ["full"] }
-
-[target.'cfg(target_arch = "x86_64")'.dependencies]
-tungstenite = { version = "0.9", default-features = false, features = [] }
