@@ -5,7 +5,7 @@ use elasticsearch::cat::CatIndicesParts;
 
 #[tokio::main]
 async fn main() -> () {
-    let url = Url::parse("https://vpc-magellan-neiz2yhd74mslonwtjnbe3aenu.us-east-1.es.amazonaws.com").unwrap();
+    let url = Url::parse("XXX").unwrap();
     let conn_pool = SingleNodeConnectionPool::new(url);
     let transport = TransportBuilder::new(conn_pool).build().unwrap();
     let client = Elasticsearch::new(transport);
